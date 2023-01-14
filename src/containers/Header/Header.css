@@ -1,0 +1,147 @@
+#Header {
+    width: 100%;
+
+    padding-top: calc(128px - 84px);
+    /* background-color: #F5F6FA; */
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right {
+    flex: 1;
+}
+
+.header-right img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: -5px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--font-family);
+}
+
+.header-tag {
+    color: #505673;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.header-title {
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -.5px;
+    color: #141933;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.header-title del {
+    color: #505673;
+} 
+
+.header-subtitle {
+    font-size: 18px;
+    color: #505673;
+    margin-bottom: 27px;
+    line-height: 1.5em;
+}
+
+.header-buttons {
+    display: flex;
+}
+
+.header-button-buy,
+.header-button-preview {
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px 8px 8px 8px;
+    padding: 16px 24px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.header-button-buy {
+    color: var(--color-white);
+    background-color: #3D55CC;
+
+    margin: 0 16px 16px 0;
+}
+
+.header-button-preview {
+    background-color: #F5F6FA80;
+    color: #3D55CC;
+
+    border-style: solid;
+    border-color: #3D55CC;
+    border-width: 1px;
+
+    margin-bottom: 16px;
+}
+
+.header-reviews {
+    padding-top: 16px;
+    display: flex;
+}
+
+.header-reviews-avatars {
+    height: 55px;
+    width: 141px;
+    object-fit: contain;
+    margin-right: 16px;
+}
+
+.header-review-title {
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #505673;
+}
+
+#Header {
+    border-bottom: solid 1px #dadef2;
+}
+
+@media screen and (max-width: 544px) {
+    .header-title {
+        font-size: 40px;
+    }
+
+    #Header {
+        padding-top: calc(120px - 84px);
+    }
+
+    .header-buttons {
+        flex-direction: column;
+    }
+
+    .header-button-buy,
+    .header-button-preview {
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .header-container {
+        flex-direction: column;
+    }
+    .header-left {
+        padding-bottom: 64px;
+    }
+}

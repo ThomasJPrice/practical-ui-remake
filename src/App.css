@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.app-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    /* max-width: 1200px;
+    margin: 0 auto; */
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-grid {
+    width: 100%;
+    background: url('https://www.practical-ui.com/wp-content/uploads/2022/10/background-grid-up.png') bottom right repeat-x, #F5F6FA;
+}
+
+@media screen and (max-width: 1200px) {
+    .section-container {
+        padding: 0 48px;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .section-container {
+        padding: 0 24px;
+    }
+}
+
+
+/* MOBILE GRID BG */
+@media screen and (max-width: 544px) {
+    .section-grid {
+        background: url('https://www.practical-ui.com/wp-content/uploads/2022/11/background-grid-down-top-right-smaller.png') top right no-repeat, #F5F6FA;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-grid {
+        background: url('https://www.practical-ui.com/wp-content/uploads/2022/10/background-grid-down-top-right-small.png') top right no-repeat, #F5F6FA;
+    }
+}

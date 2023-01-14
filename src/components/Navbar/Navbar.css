@@ -1,0 +1,10 @@
+#Navbar {
+    width: 100%;
+}
+
+.navbar-logo {
+    height: 48px;
+    width: 171px;
+
+    margin: 1em 0;
+}
