@@ -1,0 +1,37 @@
+.feature-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.feature-image-cont {
+    font-size: 32px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 50px;
+    text-align: left;
+    
+    background-color: #f0f2ff;
+    border: #ffffff solid 4px;
+    box-shadow: 0 1px 3px 0 rgb(20 25 51 / 20%), 0 1px 2px -1px rgb(20 25 51 / 20%);
+}
+
+.feature-image {
+    width: 1em;
+    height: 1em;
+    display: block;
+}
+
+.feature-title {
+    margin-bottom: 8px;
+    color: #141933;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.feature-p {
+    color: #505673;
+    font-size: 18px;
+}

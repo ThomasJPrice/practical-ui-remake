@@ -1,0 +1,31 @@
+#Features {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    background-image: url(https://www.practical-ui.com/wp-content/uploads/2022/10/background-grid-down-white-top-right-small.png);
+    background-position: top right;
+    background-repeat: no-repeat;
+    font-family: 'Lato', 'sans-serif';
+
+    border-bottom: solid 1px #dadef2;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+@media screen and (max-width: 1023px) {
+    .features-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    #Features {
+        background-image: url(https://www.practical-ui.com/wp-content/uploads/2022/11/background-grid-down-white-top-right-smaller.png);
+    }
+}
